@@ -1,0 +1,45 @@
+﻿@page "/galleryViewer"
+@using BlazorApp3.Client.Shared;
+
+<h3>Gallery</h3>
+
+<button @onclick="@(()=>changeGallery())">Change me</button>
+<br />
+
+@foreach (String item in images)
+{
+    <img src="/images/@item" width="300px" height="200px" />
+    <img src="/images/@item" width="300px" height="200px" />
+    <img src="/images/@item" width="300px" height="200px" />
+    <br />
+}
+
+@code {
+
+    List<String> images = new List<String>()
+{
+        "big1.jpg",
+        "big2.jpg",
+        "big3.svg"
+    };
+
+    private void changeGallery()
+    {
+        if (images.Contains("big1.jpg"))
+        {
+            images.Clear();
+            images.Add("big4.jpg");
+            images.Add("big5.svg");
+            images.Add("big6.svg");
+        }
+        else
+        {
+            images.Clear();
+            images.Add("big1.jpg");
+            images.Add("big2.jpg");
+            images.Add("big3.svg");
+        }
+
+    }
+
+}
