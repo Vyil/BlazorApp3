@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="webassembly3" Id="986602df-e6b2-440a-bbcb-700f39121397" Owner="" Priority="0" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="98a2f6ff-ff14-4fbc-b701-ba663b2d1856" Version="1.1" Url="https://localhost:44345/" ThinkTime="-5" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Upgrade-Insecure-Requests" Value="1" />
+        <Header Name="Sec-Fetch-Dest" Value="document" />
+        <Header Name="Sec-Fetch-Site" Value="none" />
+        <Header Name="Sec-Fetch-Mode" Value="navigate" />
+        <Header Name="Sec-Fetch-User" Value="?1" />
+      </Headers>
+    </Request>
+  </Items>
+</WebTest>
