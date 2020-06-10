@@ -12,6 +12,7 @@ namespace BlazorApp3.Server.Controllers
     [Route("[controller]")]
     public class QuizController : ControllerBase
     {
+        // Added fake data for testing the application.
         private static readonly List<QuizItem> Quiz = new List<QuizItem> {
             new QuizItem
                 {
